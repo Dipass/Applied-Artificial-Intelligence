@@ -1,5 +1,4 @@
 % 1. Завантаження та відображення зображень з бібліотеки MATLAB
-% Ці файли є стандартними та вбудованими у MATLAB
 img_peppers = imread('peppers.png');
 img_cameraman = imread('cameraman.tif');
 
@@ -8,7 +7,6 @@ subplot(1, 2, 1); imshow(img_peppers); title('peppers.png');
 subplot(1, 2, 2); imshow(img_cameraman); title('cameraman.tif');
 
 % 2. Завантаження власного зображення
-% Вказуємо назву файлу, що завантажений на MATLAB Drive
 filename = 'foto.jpg';
 my_img = imread(filename);
 
@@ -48,7 +46,6 @@ subplot(1, 2, 1); imshow(img_gray); title('Оригінал (сірий)');
 subplot(1, 2, 2); imshow(img_adj); title('Підвищена контрастність');
 
 % 8. Відображення негативу зображення
-% Можна застосувати як до кольорового, так і до чорно-білого зображення
 img_neg = imcomplement(my_img); 
 figure('Name', 'Негатив');
 imshow(img_neg); title('Негативний результат');
